@@ -4,6 +4,8 @@
 
 import requests
 import json #> string to dict
+import csv
+import os
 
 def to_usd(my_price):
     return "${0:,.2f}".format(my_price)
@@ -69,5 +71,10 @@ print("-------------------------")
 print("RECOMMENDATION: BUY!")
 print("RECOMMENDATION REASON: TODO")
 print("-------------------------")
+print("WRITING DATA TO CSV...")
+
 print("HAPPY INVESTING!")
 print("-------------------------")
+
+
+csv_file_path = "data/prices.csv"
